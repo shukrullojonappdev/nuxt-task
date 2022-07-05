@@ -1,5 +1,8 @@
 <template>
-  <div>{{ maxNumber }}</div>
+  <div>
+    <div>numbers: {{ listElements.join(", ") }}</div>
+    <div>max number: {{ maxNumber }}</div>
+  </div>
 </template>
 <script lang="ts">
 import Vue from "vue";
