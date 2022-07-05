@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <p>{{ count }}</p>
     <h1>{{ quiz.title }}</h1>
     <div v-for="(question, index) in quiz.questions" :key="question">
@@ -69,7 +69,6 @@ var quiz = {
 
 export default Vue.extend({
   name: "IndexPage",
-  el: "#app",
   data() {
     return {
       quiz: quiz,

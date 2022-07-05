@@ -1,7 +1,7 @@
 <template>
   <div>
-    <p>Lowercases in text: {{ uppercase }}</p>
-    <p>Count of lowercases: {{ count }}</p>
+    <p>Uppercases in text: {{ uppercase }}</p>
+    <p>Count of Uppercases: {{ count }}</p>
     <input
       type="text"
       v-model="message"
@@ -12,18 +12,18 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import Vue from "vue";
 
 export default Vue.extend({
-  name: 'Task0Page',
+  name: "Task0Page",
   data() {
-    return { message: '', uppercase: '', count: 0 }
+    return { message: "", uppercase: "", count: 0 };
   },
   methods: {
     getUppercases() {
-      this.uppercase = this.message.replace(/[^A-Z]/g, '')
-      this.count = this.uppercase.length
+      this.uppercase = this.message.replace(/[^A-Z]/g, "");
+      this.count = this.uppercase.length;
     },
   },
-})
+});
 </script>
